@@ -1,0 +1,118 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(252, 239, 177);
+    color: rgb(0, 0, 0);
+    font-family: cursive;
+}
+
+.bg {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.err-bg {
+    position: fixed;
+    top: 5rem;
+    width: 20rem;
+}
+
+.err-message {
+    position: fixed;
+    top: 25rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    max-width: 50rem;
+    font-size: calc(1rem + 0.5vw);
+    letter-spacing: 0.1rem;
+    color: rgb(0, 0, 0);
+    /* border-right: 1px solid gainsboro;
+    border-top: 1px solid gainsboro; */
+    box-shadow:
+        rgb(249, 0, 33) 0px 3px 10px,
+        rgb(235, 184, 16) 3px 0px 10px;
+}
+
+.list-container {
+    margin-bottom: 5rem;
+}
+
+.book-bg {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: url(../assets/book.png) right/contain no-repeat;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.3rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow:
+        rgb(249, 0, 33) 0px 3px 10px,
+        rgb(235, 184, 16) 3px 0px 10px;
+    box-shadow:
+        rgb(0, 0, 0) 0px 3px 10px,
+        rgb(241, 165, 0) 3px 0px 10px;
+}
+
+.book-title {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+p {
+    text-align: center;
+}
+
+img {
+    width: 15rem;
+    height: 23rem;
+}
+
+@media screen and (min-width: 768px) {
+    .err-bg {
+        top: 2rem;
+        width: 27rem;
+    }
+
+    .err-message {
+        top: 30rem;
+    }
+
+    .list-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .container {
+        display: flex;
+        width: 20rem;
+        height: 34rem;
+    }
+
+    .book-title {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+}
