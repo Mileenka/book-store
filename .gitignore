@@ -6,3 +6,4 @@ server-logs.txt
 request_logs.txt
 access.log
 server-logs
+.vercel
